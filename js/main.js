@@ -4,26 +4,27 @@
 for (let i = 1; i <= 100; i++) {
   let element = i;
   //console.log(element);
- //creo un contenitore div
-const Box = document.createElement("div");
-//aggiungo la classe con le caratteristiche di base che voglio
- Box.classList.add("Square");
+  //creo un contenitore div
+  const Box = document.createElement("div");
+  //aggiungo la classe con le caratteristiche di base che voglio
+  Box.classList.add("Square");
   // creo un if in cuoi metto a confronto gli elementi e richiamo le operazioni richieste
-//eseguo come prima operazione il doppio confronto
+  //eseguo come prima operazione il doppio confronto
   if (element % 3 == 0 && element % 5 == 0) {
     // il risultato prende il valore indicato
-    element ="FizzBuzz";
+    element = "FizzBuzz";
     //il risultato ottiene questa classe
     Box.classList.add("fizzbuzz");
-    
   } else if (element % 3 == 0) {
-    element ="Fizz";
+    element = "Fizz";
     Box.classList.add("fizz");
   } else if (element % 5 == 0) {
-    element ="Buzz";
+    element = "Buzz";
     Box.classList.add("buzz");
-  } 
-  
+  } else {
+    Box.classList.add("blue");
+  }
+
   const TextBox = element;
   Box.append(TextBox);
   document.getElementById("container").appendChild(Box);
