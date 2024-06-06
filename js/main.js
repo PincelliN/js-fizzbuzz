@@ -24,9 +24,8 @@ for (let i = 1; i <= 100; i++) {
   } else {
     Box.classList.add("blue");
   }
-
-  const TextBox = element;
-  Box.append(TextBox);
+// stampo la mia variabile nel box
+  Box.append(element);
   document.getElementById("container").appendChild(Box);
-  console.log(element);
+ // console.log(element);
 }
